@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Click to Eat Sandwiches!
+	</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	</head>
+	<body>
+
+<div id="heading"><h1>Click to Eat Sandwiches!</h1><br><br></div>
+<div id="btn-container">
+<button id="chicken">Chicken Sandwich</button><br>
+<button id="buffalo">Buffalo Sandwich</button><br>
+<button id="vegetable">Vegetable Sandwich</button>
+</div>
+<div id="img-div"></div>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+var chkcounter=0;
+var chzcounter=0;
+var vegcounter=0;
+
+$("#chicken").click(function(){
+	alert("Try Chicken Sandwich!");
+	chkcounter++;
+	alert("You ate "+chkcounter+" Chichen Sandwich");
+	$("#img-div").html("<img class='image' src='image/chk.png'/>");
+
+});
+
+$("#buffalo").click(function(){
+	alert("It's Cheezy, Yummy!");
+	chzcounter++;
+	alert("You ate "+chzcounter+" Cheeze Sandwich");
+	$("#img-div").html("<img class='image' src='image/cheese.jpg'/>");
+});
+
+$("#vegetable").click(function(){
+	alert("Try Vegetable Sandwich to stay healthy!");
+	vegcounter++;
+	alert("You ate "+vegcounter+" Vegetable Sandwich");
+	$("#img-div").html("<img class='image' src='image/veg.jpg'/>");
+});
+
+
+
+
+	});
+</script>
+
+
+
+	</body>
+
+</html>
